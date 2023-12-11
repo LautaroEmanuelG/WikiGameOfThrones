@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blanco: #f0f7eeff;
+    --dorado: #E1B35E;
+    --marron: #8f6f50ff;
+    --rojo: #793933ff;
+    --azul: #3f4e5cff;
+    --celeste: #afdedcff;
+    --negro: #2f2f2fff;
+    font-family: 'EB Garamond', serif;
+}
+
+.hd{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 4.5rem;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+.hd__image{
+    height: 3rem;
+}
+.frase__sentence{
+    font-style: italic;
+}

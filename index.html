@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wiki Game Of Thrones</title>
+    <link rel="shortcut icon" href="./assets/favicon-256x256.png">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="hd">
+        <figure class="hd__img"><img class="hd__image" src="./assets/Game-of-Thrones-Logo.png" alt="Game of Thrones"></figure>
+        <h1 class="hd__title">GAME OF THRONES WIKI</h1>
         <nav class="nav">
-            <figure class="nav__img"><img src="ACAIMAGEN" alt=""></figure>
-            <h1 class="nav__title">Wiki Game Of Thrones</h1>
             <div class="nav__menu">
-                <a href="nav__menu-houses">Casas</a>
-                <a href="nav__menu-characters">Personajes</a>
-
+                <input id="input" type="text" name="buscar" placeholder="Buscar Personaje">
+                <button id="buscar">Buscar</button>
             </div>
+            <a href="nav__menu-houses">Houses</a>
+            <a href="nav__menu-characters">Characters</a>
+            <figure id="resultado"></figure>
         </nav>
-        <h2 class="hd__subtitle">Una recopilacion de los princiaples personajes de la famosa saga de HBO</h2>
-        <div class="phrase">Frase de algun personaje</div>
     </header>
     <main class="m">
-        <section class="m__filters">
-            Arriba izquierda
-        </section>
-        <article class="m__map">
-            ACA LLAMADO A IMAGENES
+        <section class="frase frase1"></section>
+        <article class="carrousel">
         </article>
-        <aside class="m__aside">
-            <p>DERECHA</p>
-        </aside>
+        <a href="" class="carrousel__link">Westeros..</a>
+        <section class="frase frase2"></section>
+
     </main>
-    <script type="module" src="main.mjs"></script>
+    <script type="module" src="./modules/main.mjs"></script>
 </body>
+
 </html>

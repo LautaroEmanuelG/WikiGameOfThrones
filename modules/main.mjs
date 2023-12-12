@@ -8,7 +8,7 @@ let frase2 = document.querySelector('.frase2')
 getQuotes(frase1)
 getQuotes(frase2)
 
-let carrousel = document.querySelector('.carrousel')
+let carrousel = document.querySelector('.slider')
 
 generarCardCarrousel(carrousel)
 

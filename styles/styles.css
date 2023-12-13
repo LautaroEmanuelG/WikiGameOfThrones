@@ -15,7 +15,7 @@
     --negro: #2f2f2fff;
     --negro-header: rgba(47, 47, 47, 0.8);
     font-family: 'EB Garamond', serif;
-    background-color: var(--dorado);
+    background-color: var(--azul);
 }
 
 .header {
@@ -37,10 +37,6 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--negro-header);
-}
-
-.display__none {
-    display: none;
 }
 
 .frase {
@@ -81,6 +77,11 @@
     background-color: var(--marron);
     text-decoration: none;
     color: var(--blanco);
+    transition: transform 0.4s,background-color 0.2s;
+}
+.caja a:hover{
+    background-color: var(--negro);
+    transform:scale(1.05)
 }
 
 .cena {

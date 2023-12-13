@@ -33,3 +33,10 @@ input.addEventListener('keydown', (e) => {
 //mapeo de personajes traidos de las api con getcharacters
 let mapeo = document.querySelector('#map_characters')
 map_character(mapeo);
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('nextGroupButton').addEventListener('click', () => {
+        currentStartIndex += charactersPerGroup;
+        mapCharacter(characters, mapeo); // Asegúrate de tener acceso a la lista de personajes y al elemento mapeo aquí
+    });
+});

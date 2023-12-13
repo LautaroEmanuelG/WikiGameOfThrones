@@ -19,7 +19,6 @@
 }
 .header {
     color: var(--blanco);
-    background-color: red;
     background-image: url(../assets/Places/reino2.jpg);
     background-size: cover;
     background-position: center;

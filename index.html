@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/carrusel.css">
     <link rel="stylesheet" href="./styles/mapeo.css">
+    <link rel="stylesheet" href="./styles/inputs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -16,36 +17,71 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
-            <h1 class="title">GAME OF THRONES WIKI</h1>
-            <div class="entradas">
-                <input id="input" type="text" name="buscar" placeholder="Buscar Personaje">
-                <button id="buscar">🔍</button>
-            </div>
-        </nav>
-        <!-- <a href="nav__menu-houses">Houses</a> -->
-        <figure id="resultado"></figure>
-        <section class="frase"></section>
-    </header>
-    <div class="caja">
-        <a href="#map_characters">Characters</a>
-    </div>
-    <section class="cena">
-        <div class="slider">
+    <main>
+        <header class="header">
+            <nav class="nav">
+                <h1 class="title">GAME OF THRONES WIKI</h1>
+                <div class="entradas">
+                    <!-- <input id="input" type="text" name="buscar" placeholder="Buscar Personaje">
+                    <button id="buscar">🔍</button> -->
+                    <form class="form">
+                        <button id="buscar" >
+                            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <input id="input" class="input" placeholder="Search Character" required="" type="text">
+                        <button class="reset" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            <!-- <a href="nav__menu-houses">Houses</a> -->
+            <section class="frase"></section>
+        </header>
+        <div class="caja">
+            <a href="#map_characters">Characters</a>
         </div>
-    </section>
-    <div class="caja">
-    </div>
-    <section id="gallery" class="gallery">
+        <section class="cena">
+            <div class="slider">
+            </div>
+        </section>
+        <div class="caja">
+        </div>
+        <section id="gallery" class="gallery">
 
-    </section>
-    <h2 class="title__characters">Characters</h2>
-    <article id="map_characters" class="map_characters">
-
-    </article>
-    <button id="nextGroupButton" class="nextGroupButton">Next</button>
-    <script type="module" src="./modules/main.mjs"></script>
+        </section>
+        <h2 class="title__characters">Characters</h2>
+        <div class="patio">
+            <figure id="resultado" class="resultado"></figure>
+            <article id="map_characters" class="map_characters">
+            </article>
+            <div class="btn__move">
+                <button id="scrollLeft">Left</button>
+                <button id="scrollRight">Right</button>
+            </div>
+        </div>
+        <script type="module" src="./modules/main.mjs"></script>
+    </main>
+    <footer class="caja footer">
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <a href="https://github.com/LautaroEmanuelG" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/lautaro-gonzalez-93bb0728a/" target="_blank">LinkedIn</a>
+            <a href="" target="_blank">Portfolio</a>
+        </div>
+        <div class="footer-column">
+            <h3>Derechos de autor</h3>
+            <p>&copy; 2023 LautaroEmanuelG <br>Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Agradecimientos</h3>
+            <p>Agradezcimientos a mis Profesores de: <br>React, JavaScript, Java y Python por su dedicación y apoyo.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

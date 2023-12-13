@@ -34,9 +34,54 @@ input.addEventListener('keydown', (e) => {
 let mapeo = document.querySelector('#map_characters')
 map_character(mapeo);
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('nextGroupButton').addEventListener('click', () => {
-        currentStartIndex += charactersPerGroup;
-        mapCharacter(characters, mapeo); // Asegúrate de tener acceso a la lista de personajes y al elemento mapeo aquí
-    });
+//scroll de los personajes
+let map_characters = document.querySelector('#map_characters');
+let scrollLeft = document.querySelector('#scrollLeft');
+let scrollRight = document.querySelector('#scrollRight');
+
+function smoothScroll(element, change, duration) {
+    let start = element.scrollLeft,
+        startTime = performance.now(),
+        val, now, elapsed, t;
+
+    function animateScroll(){
+        now = performance.now();
+        elapsed = (now - startTime) / 1000;
+        t = (elapsed/duration);
+
+        element.scrollLeft = start + change * easeInOutQuad(t);
+
+        if(t < 1)
+            requestAnimationFrame(animateScroll);
+    };
+
+    function easeInOutQuad(t) { 
+        return t ;
+    };
+
+    animateScroll();
+}
+
+let scrollInterval;
+let scrollAmount = 300;
+
+scrollLeft.addEventListener('mouseover', () => {
+    scrollInterval = setInterval(() => {
+        smoothScroll(map_characters, -scrollAmount, 0.5);
+    }, 100); // Repite cada 500 milisegundos
 });
+
+scrollRight.addEventListener('mouseover', () => {
+    scrollInterval = setInterval(() => {
+        smoothScroll(map_characters, scrollAmount, 0.5);
+    }, 100); // Repite cada 500 milisegundos
+});
+
+scrollLeft.addEventListener('mouseout', () => {
+    clearInterval(scrollInterval); // Detiene la repetición cuando el mouse sale del botón
+});
+
+scrollRight.addEventListener('mouseout', () => {
+    clearInterval(scrollInterval); // Detiene la repetición cuando el mouse sale del botón
+});
+

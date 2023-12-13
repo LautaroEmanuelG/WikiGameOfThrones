@@ -16,7 +16,7 @@
 }
 
 .slider {
-  width: 100%;
+  width: 70%;
 }
 
 .slider input {
@@ -28,9 +28,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 470px;
-  perspective: 200px;
-  overflow-x: hidden;
+  min-height: 500px;
+  perspective: 400px;
+  overflow: hidden;
 }
 
 .testimonials .item {

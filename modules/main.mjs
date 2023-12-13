@@ -1,12 +1,11 @@
 import { buscarCharacter } from "./buscarCharacter.mjs"
-import { generarCardCarrousel } from "./getCharacters.mjs"
+import { generarCardCarrousel, getCharacters } from "./getCharacters.mjs"
 import { getQuotes } from "./getQuotes.mjs"
+import { map_character } from "./mapCharacters.mjs"
 
-let frase1 = document.querySelector('.frase1')
-let frase2 = document.querySelector('.frase2')
+let frase = document.querySelector('.frase')
 
-getQuotes(frase1)
-getQuotes(frase2)
+getQuotes(frase)
 
 let carrousel = document.querySelector('.slider')
 
@@ -30,3 +29,7 @@ input.addEventListener('keydown', (e) => {
         buscarCharacter(resultado);
     }
 });
+
+//mapeo de personajes traidos de las api con getcharacters
+let mapeo = document.querySelector('#map_characters')
+map_character(mapeo);

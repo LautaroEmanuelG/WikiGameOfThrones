@@ -22,40 +22,50 @@ const generarCardCarrousel = async (contenedor) => {
                     <img src="${characters[0].imageUrl}" alt="${characters[0].fullName}">
                     <div class="testimonials__info">
                         <h3>${characters[0].fullName}</h3>
-                        <h4>${characters[0].title}</h4>
-                        <h5>${characters[0].family}</h5>
+                        <section class="testimonials__hover">
+                            <h4>${characters[0].title}</h4>
+                            <h5>${characters[0].family}</h5>
+                        </section>
                     </div>
                 </label>
                 <label class="item" for="t-2">
                     <img src="${characters[1].imageUrl}" alt="${characters[1].fullName}">
                     <div class="testimonials__info">
                         <h3>${characters[1].fullName}</h3>
+                        <section class="testimonials__hover">
                         <h4>${characters[1].title}</h4>
                         <h5>${characters[1].family}</h5>
+                        </section>
                     </div>
                 </label>
                 <label class="item" for="t-3">
                     <img src="${characters[2].imageUrl}" alt="${characters[2].fullName}">
                     <div class="testimonials__info">
                         <h3>${characters[2].fullName}</h3>
+                        <section class="testimonials__hover">
                         <h4>${characters[2].title}</h4>
                         <h5>${characters[2].family}</h5>
+                        </section>
                     </div>
                 </label>
                 <label class="item" for="t-4">
                     <img src="${characters[3].imageUrl}" alt="${characters[3].fullName}">
                     <div class="testimonials__info">
                         <h3>${characters[3].fullName}</h3>
+                        <section class="testimonials__hover">
                         <h4>${characters[3].title}</h4>
                         <h5>${characters[3].family}</h5>
+                        </section>
                     </div>
                 </label>
                 <label class="item" for="t-5">
                     <img src="${characters[4].imageUrl}" alt="${characters[4].fullName}">
                     <div class="testimonials__info">
                         <h3>${characters[4].fullName}</h3>
+                        <section class="testimonials__hover">
                         <h4>${characters[4].title}</h4>
                         <h5>${characters[4].family}</h5>
+                        </section>
                     </div>
                 </label>
             </div>

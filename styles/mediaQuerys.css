@@ -23,8 +23,8 @@
         min-height: 500px;
         perspective: 1000px;
     }
-    .map_characters{
-        width: 95%;
+    .presentacion{
+        width: 90%;
     }
     .footer > .agradecimientos{
         display: none;

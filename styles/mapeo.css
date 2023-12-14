@@ -1,7 +1,7 @@
 :root {
-    --blanco: #f0f7eeff;
-    --dorado: #c26e2a;
-    --marron: #8f6f50ff;
+    --blanco: rgb(224, 224, 224);
+    --dorado: #dabb9b;
+    --marron: #281d1ad5;
     --rojo: #793933ff;
     --azul: #3f4e5cff;
     --celeste: #afdedcff;
@@ -10,15 +10,16 @@
 }
 
 .map_characters {
-    width: 70%;
+    width: 80%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 2rem;
     gap: 1rem;
-    justify-content: start;
+    justify-content: center;
     margin: 0 auto;
-    height: 510px;
+    height: 1200px;
     overflow-x: auto;
+    margin: 2rem auto;
 }
 
 .card {
@@ -49,37 +50,44 @@
     bottom: -115px;
     z-index: -1;
     transition: all 0.6s;
-  }
+}
+
 .card:hover .testimonials__hover {
     display: block;
     position: relative;
-    padding:1rem 0;
+    padding: 1rem 0;
     bottom: 0;
-  }
-.resultado{
+}
+
+.resultado {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top:100px;
+    padding-top: 100px;
 }
-.resultado > .presentacion > .testimonials__info{
+
+.resultado>.presentacion>.testimonials__info {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.resultado > .presentacion > .testimonials__info>h3{
+
+.resultado>.presentacion>.testimonials__info>h3 {
     font-size: 2.2rem;
 }
-.resultado > .presentacion > .testimonials__info>h4{
+
+.resultado>.presentacion>.testimonials__info>h4 {
     font-size: 1.2rem;
     font-weight: 400;
 }
-.resultado > .presentacion > .testimonials__info>h5{
+
+.resultado>.presentacion>.testimonials__info>h5 {
     font-size: 1rem;
     font-weight: 400;
 }
-.presentacion{
+
+.presentacion {
     width: 520px;
     height: 420px;
     background-color: var(--azul);
@@ -89,13 +97,15 @@
     overflow: hidden;
     transition: transform 0.6s;
 }
-.presentacion img{
+
+.presentacion img {
     border-bottom: var(--dorado) 3px solid;
     height: 310px;
     width: 100%;
     object-fit: cover;
     size: cover;
 }
+
 .presentacion:hover {
     transform: scale(1.1);
 }
@@ -113,10 +123,11 @@
     bottom: -115px;
     z-index: -1;
     transition: all 0.6s;
-  }
+}
+
 .presentacion:hover .testimonials__hover {
     display: block;
     position: relative;
-    padding:1rem 0;
+    padding: 1rem 0;
     bottom: 0;
-  }
+}

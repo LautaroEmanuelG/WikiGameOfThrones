@@ -3,9 +3,16 @@ import { generarCardCarrousel, getCharacters } from "./getCharacters.mjs"
 import { getQuotes } from "./getQuotes.mjs"
 import { map_character } from "./mapCharacters.mjs"
 
+let otraFraseButton = document.querySelector('.another-frase');
 let frase = document.querySelector('.frase')
 
 getQuotes(frase)
+otraFraseButton.addEventListener('click', () => {
+    getQuotes(frase);
+});
+
+
+
 
 let carrousel = document.querySelector('.slider')
 

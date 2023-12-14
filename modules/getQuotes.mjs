@@ -1,4 +1,5 @@
 const getQuotes = async (frase) => {
+    frase.innerHTML = ""
     const response = await fetch('https://api.gameofthronesquotes.xyz/v1/random/2')
     const data = await response.json()
     frase.innerHTML = `

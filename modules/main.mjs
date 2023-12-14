@@ -92,3 +92,16 @@ scrollRight.addEventListener('mouseout', () => {
     clearInterval(scrollInterval); // Detiene la repetición cuando el mouse sale del botón
 });
 
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop < lastScrollTop) {
+        // Si se está desplazando hacia arriba, muestra el formulario
+        document.querySelector('.form').style.display = 'flex';
+    } else {
+        // Si se está desplazando hacia abajo, oculta el formulario
+        document.querySelector('.form').style.display = 'none';
+    }
+    lastScrollTop = scrollTop;
+});

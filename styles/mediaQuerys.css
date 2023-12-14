@@ -3,7 +3,7 @@
         background-image: url(../assets/Places/reino2.jpg);
     }
     .nav{
-        background-color: rgba(0, 0, 0, 0.649);
+        background-color: transparent;
         display: flex;
         justify-content: end;
     }
@@ -28,5 +28,9 @@
     }
     .footer > .agradecimientos{
         display: none;
+    }
+    .form {
+        display: none;
+        transition: display 0.4s ease;
     }
 }

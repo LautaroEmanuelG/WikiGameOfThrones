@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+    .header{
+        background-image: url(../assets/Places/reino2.jpg);
+    }
+    .nav{
+        background-color: rgba(0, 0, 0, 0.649);
+        display: flex;
+        justify-content: end;
+    }
+    .nav>.title{
+        display: none;
+    }
+    .nav>.entradas{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .slider {
+        width: 100%;
+      }
+    .testimonials{
+        transform: scale(1);
+        min-height: 500px;
+        perspective: 1000px;
+    }
+    .map_characters{
+        width: 95%;
+    }
+    .footer > .agradecimientos{
+        display: none;
+    }
+}

@@ -19,11 +19,11 @@ const buscarCharacter = async (resultado) => {
             </div>
         </div>
         `
-        resultado.scrollIntoView({ behavior: 'smooth' });
+            resultado.scrollIntoView({ behavior: 'smooth' });
         } else if (resultado.innerHTML === '') {
             resultado.innerHTML = `
-            <div class="presentacion__notfound">
-                <h3>Personaje no encontrado</h3>
+            <div class="presentacion__notfound btn">
+                <h3>Character not found</h3>
             </div>
             `
         }
